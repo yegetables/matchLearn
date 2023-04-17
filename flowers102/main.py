@@ -250,7 +250,7 @@ else:
     model.save(projectPath+'/flower_recognition_model.h5')
     with open(history_path, 'w') as f:
         json.dump(history.history, f)
-    plot_history(history)
+    plot_history(history.history)
 # 这段代码的作用是将训练过程中的准确率和损失值保存到一个文件中，并调
 # 用 plot_history 函数绘制这些值的变化曲线。以下是逐行解释：
 #
